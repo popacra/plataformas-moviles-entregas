@@ -1,3 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: inline;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 body{
-    background-color: rgb(33, 45, 56);
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    display: inline;
+    background-image: url(../img/bullseye-gradient.png);
+    background-repeat: no-repeat;
+    
+}
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.presentaciones{
+    display:flex;
+    flex-flow: row wrap;
+}
+.actividades{
+    background-color: rgb(54, 74, 92);
 }
