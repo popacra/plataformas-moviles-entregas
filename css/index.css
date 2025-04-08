@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    display: inline;
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -10,9 +9,10 @@ body{
     animation-duration: 1s;
     animation-delay: 0s;
     display: inline;
-    background-image: url(../img/bullseye-gradient.png);
-    background-repeat: no-repeat;
-    
+    /*background: linear-gradient(to right, #000000, #d9dbeb);*/
+    align-items: center;
+    background-color: rgb(0, 0, 37);
+    align-content: center;
 }
 @keyframes aparicion{
     0%{
@@ -22,10 +22,29 @@ body{
         opacity: 1;
     }
 }
-.presentaciones{
-    display:flex;
-    flex-flow: row wrap;
+.box{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: rgba(0, 9, 129, 0.377);   
+    width: 90%;
+    height: 70vh;
+    margin: 7% 5%;
+    gap: 30px;
 }
-.actividades{
-    background-color: rgb(54, 74, 92);
+header{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 40px;
+}
+header hr {
+    height:5px;
+    width: 50%;
+    background-color: black;    
+}
+article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
