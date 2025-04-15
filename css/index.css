@@ -5,13 +5,15 @@
     font-family: sans-serif;
 }
 body{
+    color: rgba(241, 241, 241, 0.664);
     animation-name: aparicion;
     animation-duration: 1s;
     animation-delay: 0s;
     display: inline;
     /*background: linear-gradient(to right, #000000, #d9dbeb);*/
     align-items: center;
-    background-color: rgb(0, 0, 37);
+    background-image: url(../img/fondo.jpg);
+    /*background: linear-gradient(#F7B195,#F67280,#C06C84,#6C5B7B,#355C7D);*/
     align-content: center;
 }
 @keyframes aparicion{
@@ -22,29 +24,66 @@ body{
         opacity: 1;
     }
 }
+.barra{
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 50px;
+
+}
+.barra h2{
+    padding: 10px 55px; 
+}
 .box{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    background-color: rgba(0, 9, 129, 0.377);   
-    width: 90%;
-    height: 70vh;
-    margin: 7% 5%;
+    flex-flow: column;  
+    background-color: #000000a8;   
+    width: 50%;
+    height: 100vh;
+    margin: 5% 25%;
     gap: 30px;
+    box-shadow: 0 500px 500px rgb(0, 0, 0);
 }
 header{
+    margin: 50px;
     display: flex;
-    justify-content: center;
-    flex-flow: column;
-    margin-top: 40px;
+    flex-flow: row;
+    gap: 50px;
 }
-header hr {
-    height:5px;
-    width: 50%;
-    background-color: black;    
+header img{
+    margin-left: 50px;
+    width: 130px;
+    height: 100px;
+    border-radius: 50%;
+}
+header h1{
+    width: 600px;
+    border-bottom: solid rgb(221, 221, 221);
 }
 article{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    gap: 50px;  
+}
+article button{
+    width: 150px;
+    height: 50px;
+    border: solid rgb(255, 255, 255);
+    background-color: #ffffff52;
+    cursor: pointer;
+    color: rgba(241, 241, 241, 0.664);
+    transition-duration: 1s;
+}
+.act{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap: 50px;
+}
+article h2{
+    border-bottom: solid rgb(221, 221, 221);
+}
+article button:hover{
+    border: solid rgb(255, 255, 255);
+    background-color: #ffffff00;
 }
