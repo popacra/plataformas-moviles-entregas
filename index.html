@@ -9,19 +9,67 @@
     </div>
     <div class="box">
       <header>
-          <img src="img/perfil.png">
-          <h1>Sebastian Soliz</h1>
+          <div class="perfil">
+            <img src="img/perfil.png">
+            <h1>Sebastian Soliz</h1>
+          </div>
+          
+        <div class="player" id="album">
+          
+          <img src="img/album.jpg" alt="Portada del álbum" class="album-cover">
+          <div class="cd-wrapper">
+            <img src="img/disco.png" alt="CD giratorio" class="cd">
+          </div>
+          <div class="pause-icon">⏸️</div>
+            <audio id="music" autoplay loop>
+            <source src="img/audio.m4a" type="audio/mpeg">
+              Tu navegador no soporta la etiqueta de audio.
+            </audio>
+        </div>
+        <div class="titulo">Silent Hill 2 Remake OST - Letters/Wishful Thinking</div>
+          <div class="volume-container">
+            Volumen
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+          </div>
+
+          <script src="js/script.js"></script>
       </header>
       <article>
-          <h2>Actividades</h2>
-          <div class="act">
-            <a href="tp-1/index.html"><button><h3>Actividad 1</h3></button></a>
-            <a href="tp-2/index.html"><button><h3>Actividad 2</h3></button></a>
-            <a href="tp-3/index.html"><button><h3>Actividad 3</h3></button></a>
-            <a href="tp-4/index.html"><button><h3>Actividad 4</h3></button></a>
-          </div>
-      </article>
+        <h2>Actividades</h2>
+        <div id="vinyl-gallery">
+  <div class="vinyl">
+    <a href="tp-1/index.html"><img src="./img/tp1.png"/></a>
+    <div class="title">Actividad 1</div>
+  </div>
+
+  <div class="vinyl">
+    <a href="tp-2/index.html"><img src="./img/tp2.png"/></a>
+    <div class="title">Actividad 2</div>
+  </div>
+
+  <div class="vinyl">
+    <a href="tp-3/index.html"><img src="./img/tp3.png"/></a>
+    <div class="title">Actividad 3</div>
+  </div>
+
+  <div class="vinyl">
+    <a href="tp-4/index.html"><img src="./img/tp4.png"/></a>
+    <div class="title">Actividad 4</div>
+  </div>
+
+  <div class="vinyl">
+    <a href="tp-5/index.html"><img src="./img/tp5.png"/></a>
+    <div class="title">Actividad 5</div>
+  </div>
+</div>
+    </article>
     </div>
+
+
+
+   
+      
+    
   </body>
 </html>
                     
