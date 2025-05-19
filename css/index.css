@@ -34,7 +34,7 @@ body{
     align-items: center;
     background-image: url(../img/silent.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     /*background: linear-gradient(#F7B195,#F67280,#C06C84,#6C5B7B,#355C7D);*/
     align-content: center;
 }
@@ -318,4 +318,5 @@ article h2{
   opacity: 1;
   transform: translateY(0); 
 }
-  
+
+@media screen and (max-width: 800px){
