@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+
+<body>
+
+    <h1>Pokedex</h1>
+    <ul id="listado"></ul>
+
+</body>
+<script>
+    async function obtenerpokemones() {
+        const respuesta = await fetch('https://pokeapi.co/api/v2/pokemon', {
+            method: 'GET',
+        })
+        const pokemon = await respuesta.json();
+        const pokemones = pokemon.results
+        
+    }
+</script>
+
+</html>
